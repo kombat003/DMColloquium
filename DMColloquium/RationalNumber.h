@@ -7,7 +7,7 @@
 //
 
 #ifndef IntegerIncluded
-#def IntegerIncluded
+#define IntegerIncluded
 
 #include "Integer.h"
 
