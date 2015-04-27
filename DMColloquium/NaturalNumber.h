@@ -9,7 +9,6 @@
 #ifndef __DMColloquium__NaturalNumber__
 #define __DMColloquium__NaturalNumber__
 
-#include <stdio.h>
 #include <vector>
 
 #endif /* defined(__DMColloquium__NaturalNumber__) */

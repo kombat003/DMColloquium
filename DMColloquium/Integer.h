@@ -9,7 +9,6 @@
 #ifndef __DMColloquium__Integer__
 #define __DMColloquium__Integer__
 
-#include <stdio.h>
 #include "NaturalNumber.h"
 
 #endif /* defined(__DMColloquium__Integer__) */

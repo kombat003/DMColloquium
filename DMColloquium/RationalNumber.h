@@ -6,13 +6,6 @@
 //  Copyright (c) 2015 Ilya Kulebyakin. All rights reserved.
 //
 
-#ifndef __DMColloquium__RationalNumber__
-#define __DMColloquium__RationalNumber__
-
-#include <stdio.h>
-
-#endif /* defined(__DMColloquium__RationalNumber__) */
-
 #ifndef IntegerIncluded
 #def IntegerIncluded
 
