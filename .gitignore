@@ -9,3 +9,7 @@ DMColloquium.xcodeproj/xcuserdata/IlyaKulebyakin.xcuserdatad/xcschemes/DMColloqu
 *.xcworkspacedata
 
 *.xccheckout
+
+*.xcuserstate
+
+*.xcsettings
