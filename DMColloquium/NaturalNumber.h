@@ -15,6 +15,10 @@
 
 class NaturalNumber {
 protected:
+    // you must only use first 9 digits of each int.
+    // So, if a number is: 12345678901234 than
+    // digitBlocks[1] = 12345
+    // digitBlocks[0] = 678901234
     std::vector<unsigned int> digitBlocks;
 public:
     NaturalNumber greatestCommonFactor(NaturalNumber secondNumber);
