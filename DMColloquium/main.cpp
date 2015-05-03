@@ -8,12 +8,9 @@
 
 #include <iostream>
 #include "Polynomial.h"
-#define IntegerIncluded
-#include "RationalNumber.h"
 
 //All necessary #includes are made. You have access to all 4 classes. 
 
 int main(int argc, const char * argv[]) {
-    
     return 0;
 }
