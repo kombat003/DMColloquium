@@ -11,7 +11,7 @@
 
 #include "RationalNumber.h"
 
-#endif /* defined(__DMColloquium__Polynomial__) */
+
 
 class Polynomial {
 private:
@@ -19,3 +19,5 @@ private:
 public:
     
 };
+
+#endif /* defined(__DMColloquium__Polynomial__) */

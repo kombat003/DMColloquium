@@ -7,9 +7,11 @@
 //
 
 #include <iostream>
+#include "NaturalNumber.h"
 #include "Polynomial.h"
+#include "RationalNumber.h"
+#include "Integer.h"
 
-//All necessary #includes are made. You have access to all 4 classes. 
 
 int main(int argc, const char * argv[]) {
     return 0;

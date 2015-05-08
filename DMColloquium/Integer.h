@@ -11,12 +11,12 @@
 
 #include "NaturalNumber.h"
 
-#endif /* defined(__DMColloquium__Integer__) */
-
-
 class Integer : public NaturalNumber {
 private:
     bool isPositive;
 public:
     // All declarations go here
 };
+
+
+#endif /* defined(__DMColloquium__Integer__) */

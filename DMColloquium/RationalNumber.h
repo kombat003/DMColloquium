@@ -10,8 +10,9 @@
 #define IntegerIncluded
 
 #include "Integer.h"
+#include "NaturalNumber.h"
 
-#endif
+
 
 class RationalNumber {
 private:
@@ -20,3 +21,5 @@ private:
 public:
     // declarations for methods
 };
+
+#endif

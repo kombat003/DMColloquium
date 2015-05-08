@@ -11,7 +11,7 @@
 
 #include <vector>
 
-#endif /* defined(__DMColloquium__NaturalNumber__) */
+
 
 class NaturalNumber {
 protected:
@@ -24,3 +24,5 @@ public:
     NaturalNumber greatestCommonFactor(NaturalNumber secondNumber);
     // put declarations-ONLY for each method below
 };
+
+#endif /* defined(__DMColloquium__NaturalNumber__) */
