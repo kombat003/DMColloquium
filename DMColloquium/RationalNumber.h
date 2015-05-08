@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Ilya Kulebyakin. All rights reserved.
 //
 
-#ifndef IntegerIncluded
-#define IntegerIncluded
+#ifndef __DMColloquium__RationalNumber__
+#define __DMColloquium__RationalNumber__
 
 #include "Integer.h"
 #include "NaturalNumber.h"
