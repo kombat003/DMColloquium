@@ -10,12 +10,16 @@
 #define __DMColloquium__Integer__
 
 #include "NaturalNumber.h"
+#include <vector>
 
 class Integer : public NaturalNumber {
 private:
     bool isPositive;
 public:
-    // All declarations go here
+    Integer();
+    Integer(std::vector<unsigned int> digits, bool isPositive);
+    Integer(NaturalNumber natural, bool isPositive):NaturalNumber{natural},isPositive{isPositive}{};
+    
 };
 
 
