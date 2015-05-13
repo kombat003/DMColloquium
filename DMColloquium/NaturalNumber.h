@@ -21,9 +21,9 @@ protected:
     // digitBlocks[0] = 678901234
     std::vector<unsigned int> digitBlocks;
 public:
+    bool NZER_N_B();
     NaturalNumber();
     NaturalNumber(std::vector<unsigned int> digits):digitBlocks{digits}{};
-    NaturalNumber ADD_1N_N();
     
     // put declarations-ONLY for each method below
 };

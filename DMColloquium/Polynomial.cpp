@@ -11,3 +11,14 @@ using namespace std;
 Polynomial::Polynomial() {
     coefficients = vector<RationalNumber>(1);
 }
+
+RationalNumber Polynomial::LED_P_Z()
+{
+	if (!coefficients.empty())
+		return coefficients.back(); // do something about it
+	else
+	{
+		RationalNumber X;
+		return X;
+	}
+}

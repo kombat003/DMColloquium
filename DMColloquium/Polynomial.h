@@ -20,5 +20,6 @@ public:
     Polynomial();
     Polynomial(std::vector<RationalNumber> coeff):coefficients{coeff}{};
 };
-
+RationalNumber LED_P_Z();
+    
 #endif /* defined(__DMColloquium__Polynomial__) */

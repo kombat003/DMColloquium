@@ -7,12 +7,21 @@
 //
 
 #include "NaturalNumber.h"
-using namespace std;
 
 // put definitions for all methods over here.
 
-NaturalNumber::NaturalNumber() {
-    digitBlocks = std::vector<unsigned int>(1);
-    digitBlocks[0] = 0;
+/// This is just an example of how to get going. Doesn't make any sense
+bool NaturalNumber::NZER_N_B()
+{
+	for (int i = 0; i < digitBlocks.size(); i++)
+	{
+		if (digitBlocks[i] != 0)
+			return true;
+	}
+		return false;
 }
 
+NaturalNumber::NaturalNumber() {
+	digitBlocks = std::vector<unsigned int>(1);
+	digitBlocks[0] = 0;
+}
