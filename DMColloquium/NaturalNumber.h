@@ -21,6 +21,7 @@ protected:
     // digitBlocks[0] = 678901234
     std::vector<unsigned int> digitBlocks;
 public:
+    bool NZER_N_B();
     NaturalNumber greatestCommonFactor(NaturalNumber secondNumber);
     // put declarations-ONLY for each method below
 };
