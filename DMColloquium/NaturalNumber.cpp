@@ -16,3 +16,28 @@ NaturalNumber::NaturalNumber() {
     digitBlocks[0] = 0;
 }
 
+void NaturalNumber::setDigitsFromString(std::string numStr) {
+    auto endPos = remove(numStr.begin(), numStr.end(), ' ');
+    numStr.erase(endPos, numStr.end());
+    
+    unsigned long numOfBlock = (numStr.length() - 1) / 9;
+    long long numOfElement = (numStr.length() - 1) % 9;
+    digitBlocks.resize(numOfBlock+1);
+    for (long long i = 0; i < numStr.length(); ++i) {
+        char c = numStr[i];
+        digitBlocks[numOfBlock] += (c - '0') * pow(10, numOfElement--);
+        if (numOfElement < 0) {
+            --numOfBlock;
+            numOfElement = 8;
+        }
+        
+    }
+}
+
+istream& operator>> (istream& str, NaturalNumber& number)  {
+    string numStr;
+    getline(str, numStr);
+    number.setDigitsFromString(numStr);
+    return str;
+}
+

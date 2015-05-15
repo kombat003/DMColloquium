@@ -10,6 +10,8 @@
 #define __DMColloquium__Polynomial__
 
 #include "RationalNumber.h"
+#include <string>
+#include <sstream>
 
 
 
@@ -19,6 +21,8 @@ private:
 public:
     Polynomial();
     Polynomial(std::vector<RationalNumber> coeff):coefficients{coeff}{};
+    // RationalNumber objects separated by comma ("1235/12341, 234623452345/23462346, -23452346/23462346523456")
+    friend std::istream& operator>> (std::istream& str, Polynomial& polinom);
 };
 
 #endif /* defined(__DMColloquium__Polynomial__) */

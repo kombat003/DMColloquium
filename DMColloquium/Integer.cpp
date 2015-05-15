@@ -19,3 +19,21 @@ Integer::Integer(vector<unsigned int> digits, bool isPositive) {
     digitBlocks = digits;
     this->isPositive = isPositive;
 }
+
+std::istream& operator>> (std::istream& str, Integer& integer) {
+    string numString;
+    getline(str, numString);
+    
+    if (!isdigit(numString[0])) {
+        integer.isPositive = (numString[0] != '-');
+        numString = numString.substr(1);
+    } else {
+        integer.isPositive = true;
+    }
+    
+    integer.setDigitsFromString(numString);
+    
+    NaturalNumber natNum;
+    
+    return str;
+}

@@ -10,6 +10,9 @@
 #define __DMColloquium__NaturalNumber__
 
 #include <vector>
+#include <iostream>
+#include <string>
+#include <cmath>
 
 
 
@@ -24,7 +27,9 @@ public:
     NaturalNumber();
     NaturalNumber(std::vector<unsigned int> digits):digitBlocks{digits}{};
     NaturalNumber ADD_1N_N();
-    
+    // ("23462346234523462346234623")
+    friend std::istream& operator>> (std::istream& str, NaturalNumber& number);
+    void setDigitsFromString(std::string str);
     // put declarations-ONLY for each method below
 };
 
