@@ -11,7 +11,7 @@
 #include "Polynomial.h"
 #include "RationalNumber.h"
 #include "Integer.h"
-
+using namespace std;
 
 int main(int argc, const char * argv[]) {
     return 0;

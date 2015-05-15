@@ -11,6 +11,7 @@
 
 #include "NaturalNumber.h"
 #include <vector>
+#include <string>
 
 class Integer : public NaturalNumber {
 private:
@@ -19,7 +20,8 @@ public:
     Integer();
     Integer(std::vector<unsigned int> digits, bool isPositive);
     Integer(NaturalNumber natural, bool isPositive):NaturalNumber{natural},isPositive{isPositive}{};
-    
+    //("2346234623452346234623462346") ("-234623452346234623462346") ("+234652345234623462346")
+    friend std::istream& operator>> (std::istream& str, Integer& integer);
 };
 
 
