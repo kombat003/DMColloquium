@@ -11,7 +11,6 @@ using namespace std;
 
 // put definitions for all methods over here.
 
-
 NaturalNumber::NaturalNumber() {
     digitBlocks = std::vector<unsigned int>(1);
     digitBlocks[0] = 0;
