@@ -21,6 +21,7 @@ Integer::Integer(vector<unsigned int> digits, bool isPositive) {
 }
 
 std::istream& operator>> (std::istream& str, Integer& integer) {
+    // Кулебякин Илья 4308
     string numString;
     getline(str, numString);
     
@@ -35,5 +36,14 @@ std::istream& operator>> (std::istream& str, Integer& integer) {
     
     NaturalNumber natNum;
     
+    return str;
+}
+
+ostream& operator<< (ostream& str, const Integer& number) {
+    // Кулебякин Илья 4308
+    if (!number.isPositive) {
+        str << '-';
+    }
+    number.writeDigitsToStream(str);
     return str;
 }

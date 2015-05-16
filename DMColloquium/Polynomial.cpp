@@ -14,6 +14,7 @@ Polynomial::Polynomial() {
 }
 
 std::istream& operator>> (std::istream& str, Polynomial& polinom) {
+    // Кулебякин Илья 4308
     string strNum;
     getline(str, strNum);
     vector<size_t> occurances;
@@ -33,6 +34,21 @@ std::istream& operator>> (std::istream& str, Polynomial& polinom) {
         coeffStream >> ratNum;
         polinom.coefficients.push_back(ratNum);
     }
+    
+    return str;
+}
+
+std::ostream& operator<< (std::ostream& str, const Polynomial& polinom) {
+    // Кулебякин Илья 4308
+    for (long long i  = polinom.coefficients.size() - 1 ; i >= 0; --i) {
+        str << '(' << polinom.coefficients[i];
+        if (i != 0) {
+            str << ")x^" << i << " + ";
+        } else {
+            str << ')';
+        }
+    }
+    
     
     return str;
 }

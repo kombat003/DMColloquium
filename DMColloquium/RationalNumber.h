@@ -14,7 +14,7 @@
 #include <iostream>
 #include <string>
 #include <sstream>
-
+#include <vector>
 
 class RationalNumber {
 private:
@@ -27,6 +27,7 @@ public:
     
     // "numerator/denominator" ("-23541234123512351235/124612354123512351236")
     friend std::istream& operator>> (std::istream& str, RationalNumber& ratNum);
+    friend std::ostream& operator<< (std::ostream& str, const RationalNumber& ratNum);
 };
 
 #endif
