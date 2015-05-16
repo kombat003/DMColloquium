@@ -19,7 +19,9 @@ std::istream& operator>> (std::istream& str, RationalNumber& ratNum) {
     numStr.erase(endPos, numStr.end());
     auto div = numStr.find('/');
     if (div == string::npos) {
-        ratNum.denominator = NaturalNumber();
+        vector<unsigned int> vec(1);
+        vec[0] = 1;
+        ratNum.denominator = NaturalNumber(vec);
     } else {
         istringstream denominatorStream(numStr.substr(div+1));
         denominatorStream >> ratNum.denominator;

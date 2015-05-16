@@ -38,3 +38,12 @@ std::istream& operator>> (std::istream& str, Integer& integer) {
     
     return str;
 }
+
+ostream& operator<< (ostream& str, const Integer& number) {
+    // Кулебякин Илья 4308
+    if (!number.isPositive) {
+        str << '-';
+    }
+    number.writeDigitsToStream(str);
+    return str;
+}
