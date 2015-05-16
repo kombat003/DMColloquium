@@ -101,3 +101,7 @@ NaturalNumber NaturalNumber::ADD_NN_N(NaturalNumber nat_num_2)
 	}
 	return result_of_sum;
 }
+
+
+
+
