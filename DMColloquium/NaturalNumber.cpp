@@ -3,6 +3,7 @@
 using namespace std;
 
 NaturalNumber::NaturalNumber() {
+
     digitBlocks = std::vector<unsigned int>(1);
     digitBlocks[0] = 0;
 }
@@ -121,4 +122,28 @@ int NaturalNumber::COM_NN_D(NaturalNumber n) {
             }
         }
     return 1;
+}
+
+// Задача N-3, группа: Кожевников Никита, Ташланов Андрей
+NaturalNumber NaturalNumber::ADD_1N_N(){
+	NaturalNumber result = *this;
+
+	for (unsigned int i = 0; i < result.digitBlocks.size(); i++)
+	{
+		if (result.digitBlocks[i] != 999999999)
+		{
+			result.digitBlocks[i] += 1;
+			break;
+		}
+		else
+			result.digitBlocks[i] = 0;
+	
+		if ((i+1) == result.digitBlocks.size())
+		{
+			result.digitBlocks.push_back(1);
+			break;
+		}
+	}
+
+    return result;
 }

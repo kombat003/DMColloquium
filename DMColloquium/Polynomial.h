@@ -6,14 +6,12 @@
 //  Copyright (c) 2015 Ilya Kulebyakin. All rights reserved.
 //
 
-#ifndef __DMColloquium__Polynomial__
-#define __DMColloquium__Polynomial__
-
 #include "RationalNumber.h"
 #include <string>
 #include <sstream>
 
-
+#ifndef __DMColloquium__Polynomial__
+#define __DMColloquium__Polynomial__
 
 class Polynomial {
 private:
@@ -23,7 +21,10 @@ public:
     Polynomial(std::vector<RationalNumber> coeff):coefficients{coeff}{};
     // RationalNumber objects separated by comma ("1235/12341, 234623452345/23462346, -23452346/23462346523456")
     friend std::istream& operator>> (std::istream& str, Polynomial& polinom);
+    RationalNumber LED_P_Z();
+
+	Polynomial SUB_PP_P(Polynomial SecondPoly);
 };
-RationalNumber LED_P_Z();
-    
-#endif /* defined(__DMColloquium__Polynomial__) */
+
+#endif /* defined(__DMColloquium__Polynomial__) */ 
+
