@@ -21,6 +21,7 @@ Integer::Integer(vector<unsigned int> digits, bool isPositive) {
 }
 
 std::istream& operator>> (std::istream& str, Integer& integer) {
+    // Кулебякин Илья 4308
     string numString;
     getline(str, numString);
     

@@ -25,6 +25,7 @@ RationalNumber Polynomial::LED_P_Z()
 }
 
 std::istream& operator>> (std::istream& str, Polynomial& polinom) {
+    // Кулебякин Илья 4308
     string strNum;
     getline(str, strNum);
     vector<size_t> occurances;
@@ -46,7 +47,6 @@ std::istream& operator>> (std::istream& str, Polynomial& polinom) {
     }
     
     return str;
-}
 
 // Задача P-2, группа: Кожевников Никита, Ташланов Андрей
 Polynomial Polynomial::SUB_PP_P(Polynomial SecondPoly)
@@ -68,4 +68,5 @@ Polynomial Polynomial::SUB_PP_P(Polynomial SecondPoly)
 	}
 
 	return result;
+}
 }

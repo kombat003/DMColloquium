@@ -9,7 +9,10 @@ RationalNumber::RationalNumber() {
     //denominator.ADD_1N_N();
 }
 
+
+
 std::istream& operator>> (std::istream& str, RationalNumber& ratNum) {
+    //  Кулебякин Илья 4308
     string numStr;
     getline(str, numStr);
     auto endPos = remove(numStr.begin(), numStr.end(), ' ');

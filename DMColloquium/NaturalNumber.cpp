@@ -19,6 +19,7 @@ bool NaturalNumber::NZER_N_B()
 }
 
 void NaturalNumber::setDigitsFromString(std::string numStr) {
+    // Кулебякин Илья 4308
     auto endPos = remove(numStr.begin(), numStr.end(), ' ');
     numStr.erase(endPos, numStr.end());
     
@@ -37,6 +38,7 @@ void NaturalNumber::setDigitsFromString(std::string numStr) {
 }
 
 istream& operator>> (istream& str, NaturalNumber& number)  {
+    // Кулебякин Илья 4308
     string numStr;
     getline(str, numStr);
     number.setDigitsFromString(numStr);
