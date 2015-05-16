@@ -64,3 +64,15 @@ RationalNumber RationalNumber::DIV_QQ_Q(RationalNumber n) {
 	return nt;
 }
 
+RationalNumber RationalNumber::MUL_QQ_Q(RationalNumber multiplier) {
+    if (!this->denominator.NZER_N_B() || !multiplier.denominator.NZER_N_B()){
+        cerr << "Invalid fraction.\n";
+        return
+    }
+    RationalNumber result;
+    result.numerator = this->numerator.MUL_ZZ_Z(multiplier.numerator);
+    result.denominator = this->denominator.MUL_NN_N(multiplier.denominator);
+    result.RED_Q_Q();
+    return result;
+}
+
