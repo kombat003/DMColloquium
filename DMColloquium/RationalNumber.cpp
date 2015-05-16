@@ -53,8 +53,6 @@ RationalNumber RationalNumber::SUB_QQ_Q(RationalNumber rat_num_2)
 }
 
 
-}
-
 RationalNumber RationalNumber::DIV_QQ_Q(RationalNumber n) {
 	// this function devides one rational number by another
 	RationalNumber nt;
