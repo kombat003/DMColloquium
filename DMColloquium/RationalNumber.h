@@ -9,6 +9,7 @@
 #include <vector>
 
 
+
 class RationalNumber {
 private:
     Integer numerator;
@@ -23,6 +24,8 @@ public:
     RationalNumber SUB_QQ_Q(RationalNumber rat_num_2);
 
     RationalNumber DIV_QQ_Q(RationalNumber);
+    
+    friend std::ostream& operator<< (std::ostream& str, const RationalNumber& ratNum);
 };
 
 #endif

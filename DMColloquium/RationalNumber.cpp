@@ -66,3 +66,8 @@ RationalNumber RationalNumber::DIV_QQ_Q(RationalNumber n) {
 	return nt;
 }
 
+std::ostream& operator<< (std::ostream& str, const RationalNumber& ratNum) {
+    // Кулебякин Илья 4308
+    str << ratNum.numerator << '/' << ratNum.denominator;
+    return str;
+}

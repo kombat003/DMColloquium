@@ -149,3 +149,22 @@ NaturalNumber NaturalNumber::ADD_1N_N(){
 
     return result;
 }
+
+void NaturalNumber::writeDigitsToStream(std::ostream& str) const {
+    // Кулебякин Илья 4308
+    str << digitBlocks[digitBlocks.size() -1];
+    for (long long i = digitBlocks.size() - 2; i >= 0 ; --i) {
+        unsigned int zeroMark = 100000000;
+        while (digitBlocks[i] < zeroMark && zeroMark > 0) {
+            str << '0';
+            zeroMark /= 10;
+        }
+        str << digitBlocks[i];
+    }
+}
+
+ostream& operator<< (ostream& str, const NaturalNumber& number) {
+    // Кулебякин Илья 4308
+    number.writeDigitsToStream(str);
+    return str;
+}

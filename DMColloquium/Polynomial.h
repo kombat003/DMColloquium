@@ -21,6 +21,7 @@ public:
     Polynomial(std::vector<RationalNumber> coeff):coefficients{coeff}{};
     // RationalNumber objects separated by comma ("1235/12341, 234623452345/23462346, -23452346/23462346523456")
     friend std::istream& operator>> (std::istream& str, Polynomial& polinom);
+    friend std::ostream& operator<< (std::ostream& str, const Polynomial& polinom);
     RationalNumber LED_P_Z();
 
 	Polynomial SUB_PP_P(Polynomial SecondPoly);
