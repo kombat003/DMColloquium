@@ -1,11 +1,3 @@
-//
-//  RationalNumber.cpp
-//  DMColloquium
-//
-//  Created by Ilya Kulebyakin on 4/28/15.
-//  Copyright (c) 2015 Ilya Kulebyakin. All rights reserved.
-//
-
 #include "RationalNumber.h"
 
 using namespace std;
@@ -13,6 +5,7 @@ using namespace std;
 RationalNumber::RationalNumber() {
     numerator = Integer();
     denominator = NaturalNumber();
+
     //denominator.ADD_1N_N();
 }
 
@@ -57,5 +50,16 @@ RationalNumber RationalNumber::SUB_QQ_Q(RationalNumber rat_num_2)
 		//ERR: denominator = 0
 	}
 	return result;
+}
+
+
+}
+
+RationalNumber RationalNumber::DIV_QQ_Q(RationalNumber n) {
+	// this function devides one rational number by another
+	RationalNumber nt;
+	nt.numerator = this->numerator.MUL_ZZ_Z(Integer(n.denominator, true));
+	nt.denominator = n.numerator.MUL_ZZ_Z(Integer(this->denominator, true)), true;	
+	return nt;
 }
 
