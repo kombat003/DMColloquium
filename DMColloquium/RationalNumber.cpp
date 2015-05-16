@@ -8,6 +8,7 @@
 
 #include "RationalNumber.h"
 
+
 using namespace std;
 
 RationalNumber::RationalNumber() {
@@ -35,7 +36,6 @@ std::istream& operator>> (std::istream& str, RationalNumber& ratNum) {
     
 }
 
-
 RationalNumber RationalNumber::SUB_QQ_Q(RationalNumber rat_num_2)
 {
 	//
@@ -58,4 +58,3 @@ RationalNumber RationalNumber::SUB_QQ_Q(RationalNumber rat_num_2)
 	}
 	return result;
 }
-
