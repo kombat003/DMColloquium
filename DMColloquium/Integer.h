@@ -23,6 +23,7 @@ public:
     //("2346234623452346234623462346") ("-234623452346234623462346") ("+234652345234623462346")
     friend std::istream& operator>> (std::istream& str, Integer& integer);
     Integer MOD_ZZ_Z(Integer);
+    friend std::ostream& operator<< (std::ostream& str, const Integer& integer);
 };
 
 

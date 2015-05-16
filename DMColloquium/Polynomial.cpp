@@ -47,6 +47,7 @@ std::istream& operator>> (std::istream& str, Polynomial& polinom) {
     }
     
     return str;
+}
 
 // Задача P-2, группа: Кожевников Никита, Ташланов Андрей
 Polynomial Polynomial::SUB_PP_P(Polynomial SecondPoly)
@@ -69,4 +70,18 @@ Polynomial Polynomial::SUB_PP_P(Polynomial SecondPoly)
 
 	return result;
 }
+
+std::ostream& operator<< (std::ostream& str, const Polynomial& polinom) {
+    // Кулебякин Илья 4308
+    for (long long i  = polinom.coefficients.size() - 1 ; i >= 0; --i) {
+        str << '(' << polinom.coefficients[i];
+        if (i != 0) {
+            str << ")x^" << i << " + ";
+        } else {
+            str << ')';
+        }
+    }
+    
+    
+    return str;
 }

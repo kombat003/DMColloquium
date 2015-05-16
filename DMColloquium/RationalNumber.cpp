@@ -19,7 +19,9 @@ std::istream& operator>> (std::istream& str, RationalNumber& ratNum) {
     numStr.erase(endPos, numStr.end());
     auto div = numStr.find('/');
     if (div == string::npos) {
-        ratNum.denominator = NaturalNumber();
+        vector<unsigned int> vec(1);
+        vec[0] = 1;
+        ratNum.denominator = NaturalNumber(vec);
     } else {
         istringstream denominatorStream(numStr.substr(div+1));
         denominatorStream >> ratNum.denominator;
@@ -76,3 +78,8 @@ RationalNumber RationalNumber::MUL_QQ_Q(RationalNumber multiplier) {
     return result;
 }
 
+std::ostream& operator<< (std::ostream& str, const RationalNumber& ratNum) {
+    // Кулебякин Илья 4308
+    str << ratNum.numerator << '/' << ratNum.denominator;
+    return str;
+}

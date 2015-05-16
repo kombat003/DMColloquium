@@ -39,6 +39,15 @@ std::istream& operator>> (std::istream& str, Integer& integer) {
     return str;
 }
 
+ostream& operator<< (ostream& str, const Integer& number) {
+    // Кулебякин Илья 4308
+    if (!number.isPositive) {
+        str << '-';
+    }
+    number.writeDigitsToStream(str);
+    return str;
+}
+
 Integer Integer::MOD_ZZ_Z(Integer divisor)
 {
     if (!divisor.NZER_N_B()) {

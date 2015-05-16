@@ -6,6 +6,7 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+#include <vector>
 
 
 
@@ -23,6 +24,8 @@ public:
     RationalNumber SUB_QQ_Q(RationalNumber rat_num_2);
     RationalNumber MUL_QQ_Q(RationalNumber);
     RationalNumber DIV_QQ_Q(RationalNumber);
+    
+    friend std::ostream& operator<< (std::ostream& str, const RationalNumber& ratNum);
 };
 
 #endif
