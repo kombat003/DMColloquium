@@ -47,6 +47,7 @@ std::istream& operator>> (std::istream& str, Polynomial& polinom) {
     }
     
     return str;
+}
 
 // Задача P-2, группа: Кожевников Никита, Ташланов Андрей
 Polynomial Polynomial::SUB_PP_P(Polynomial SecondPoly)
@@ -68,5 +69,4 @@ Polynomial Polynomial::SUB_PP_P(Polynomial SecondPoly)
 	}
 
 	return result;
-}
 }
