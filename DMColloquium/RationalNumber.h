@@ -27,6 +27,7 @@ public:
     
     // "numerator/denominator" ("-23541234123512351235/124612354123512351236")
     friend std::istream& operator>> (std::istream& str, RationalNumber& ratNum);
+    RationalNumber SUB_QQ_Q(RationalNumber rat_num_2);
 };
 
 #endif
