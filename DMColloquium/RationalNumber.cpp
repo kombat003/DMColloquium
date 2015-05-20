@@ -13,3 +13,7 @@ RationalNumber::RationalNumber() {
     denominator = NaturalNumber();
     //denominator.ADD_1N_N();
 }
+
+Integer RationalNumber::TRAN_Q_Z(RationalNumber n) {
+    return n.numerator;
+}
