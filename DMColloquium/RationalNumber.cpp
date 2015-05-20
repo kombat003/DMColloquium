@@ -42,3 +42,7 @@ std::ostream& operator<< (std::ostream& str, const RationalNumber& ratNum) {
     str << ratNum.numerator << '/' << ratNum.denominator;
     return str;
 }
+
+Integer RationalNumber::TRAN_Q_Z(RationalNumber n) {
+    return n.numerator;
+}
