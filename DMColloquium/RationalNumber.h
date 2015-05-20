@@ -22,6 +22,7 @@ public:
     // Instanciates a rational number (0/1)
     RationalNumber();
     RationalNumber(Integer numerator, NaturalNumber denominator):numerator{numerator},denominator{denominator}{};
+    Integer TRAN_Q_Z(RationalNumber);
     // declarations for methods
 };
 
